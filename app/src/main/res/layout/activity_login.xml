@@ -5,16 +5,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.willardpc.loginforandroid.LoginActivity"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#f0f0f0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TICKER"
+        android:id="@+id/tvAppName"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/etEmail"
-        android:hint="Email" />
+        android:hint="Email"
+        android:layout_gravity="center_horizontal" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
@@ -23,10 +36,18 @@
         android:hint="Password" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/loginBtn"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Signup Here"
+        android:id="@+id/tvSignup"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
